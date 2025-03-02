@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap");
+
+:root {
+  /* Tokens */
+  --success: #069e71;
+  --danger: #ff3559;
+  --warning: #ffa51f;
+  --cool-black-0: white;
+  --cool-black-25: #d8d9dc;
+  --cool-black-50: #b4b6ba;
+  --cool-black-100: #8c8e95;
+  --cool-black-200: #666a73;
+  --cool-black-300: #414550;
+  --cool-black-400: #323640;
+  --cool-black-500: #2b2f38;
+  --cool-black-600: #22262e;
+  --cool-black-700: #1b1e25;
+  --cool-black-800: #14161c;
+  --cool-black-900: #0c0e13;
+  --accent: #ffb803;
+
+  /* Aliases */
+  --page-background: var(--cool-black-900);
+  --foreground: var(--cool-black-0);
+  --foreground-medium: var(--cool-black-400);
+  --foreground-light: var(--cool-black-600);
+  --container-background: var(--cool-black-800);
+  --container-background-hover: var(--cool-black-700);
+  --border-light: var(--cool-black-700);
+  --border-medium: var(--cool-black-600);
+  --border-heavy: var(--cool-black-500);
+}
+
+body {
+  background-color: var(--page-background);
+  color: var(--foreground);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+}
+
+.container {
+  font-family: "Inter", sans-serif;
+  background: var(--container-background);
+  color: var(--foreground);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+div {
+  max-width: 1024px;
+  margin: auto;
+}
+
+button {
+  border: 1px solid var(--border-light);
+  transition: background-color 0.2s;
+}
+button:hover {
+  background: var(--container-background-hover);
+}

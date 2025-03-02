@@ -1,0 +1,46 @@
+{
+  "starterMembers": [
+    {
+      "id": 123,
+      "name": "Lana McMillan",
+      "status": "Available",
+      "avatar": 0,
+      "info": { "age": 28, "sex": "Female", "origin": "United States, Earth" },
+      "attributes": {
+        "wit": 2,
+        "acuity": 3,
+        "might": -1,
+        "finesse": 1
+      },
+      "traits": []
+    },
+    {
+      "id": 456,
+      "name": "Takeshi Kitamura",
+      "status": "On Expedition",
+      "avatar": 1,
+      "info": { "age": 41, "sex": "Male", "origin": "Juno, Mars" },
+      "attributes": {
+        "wit": 1,
+        "acuity": 1,
+        "might": 1,
+        "finesse": 2
+      },
+      "traits": []
+    },
+    {
+      "id": 789,
+      "name": "Hermann Ackerman",
+      "status": "Available",
+      "avatar": 2,
+      "info": { "age": 36, "sex": "Male", "origin": "Austria, Earth" },
+      "attributes": {
+        "wit": 1,
+        "acuity": 1,
+        "might": 2,
+        "finesse": 1
+      },
+      "traits": []
+    }
+  ]
+}

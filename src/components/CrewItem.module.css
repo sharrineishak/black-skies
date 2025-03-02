@@ -1,0 +1,53 @@
+.crewItem {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.crewItem img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.crewItem .info {
+  flex: 1;
+  text-align: left;
+}
+
+.crewItem h3 {
+  text-transform: uppercase;
+}
+
+.available {
+  color: var(--success);
+}
+
+.onExpedition {
+  color: var(--warning);
+}
+
+.recovering {
+  color: var(--danger);
+}
+
+.crewItem h3 {
+  line-height: 0;
+}
+
+.attributes {
+  display: flex;
+  flex-direction: row;
+}
+
+.attributes div {
+  width: 80px;
+}
+
+.attributes div strong {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--accent);
+}

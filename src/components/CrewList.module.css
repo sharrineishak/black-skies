@@ -1,0 +1,11 @@
+h2 {
+  text-transform: uppercase;
+}
+
+.crewList li {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 8pt;
+}
