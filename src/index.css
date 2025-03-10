@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   /* Tokens */
@@ -6,6 +6,9 @@
   --danger: #ff3559;
   --warning: #ffa51f;
   --accent: #ffb803;
+  --accent-slightly-faded: #855015;
+  --accent-faded: #42260f;
+  --accent-extra-faded: #2b1a19;
   --cool-black-0: white;
   --cool-black-25: #d8d9dc;
   --cool-black-50: #b4b6ba;
@@ -32,14 +35,14 @@
   --spacing-xl: 24px;
   --spacing-2xl: 32px;
   --spacing-3xl: 64px;
-  
+
   /* Aliases */
   --page-background: var(--cool-black-900);
   --foreground: var(--cool-black-0);
   --foreground-medium: var(--cool-black-400);
   --foreground-light: var(--cool-black-600);
   --container-background: var(--cool-black-800);
-  --container-background-hover: var(--cool-black-700);
+  --container-background-hover: #2b1a19;
   --container-corner-s: var(--corner-m);
   --container-corner-l: var(--corner-xl);
   --border-light: var(--cool-black-700);
@@ -50,7 +53,7 @@
 body {
   background-color: var(--page-background);
   color: var(--foreground);
-  font-family: "Inter", sans-serif;
+  font-family: "Saira", sans-serif;
   text-align: center;
 }
 
@@ -62,23 +65,7 @@ h3 {
   font-weight: 400;
 }
 
-.container {
-  font-family: "Inter", sans-serif;
-  background: var(--container-background);
-  color: var(--foreground);
-  padding: 12px;
-  border-radius: 12px;
-}
-
 div {
   max-width: 1024px;
   margin: auto;
-}
-
-button {
-  border: 1px solid var(--border-light);
-  transition: background-color 0.2s;
-}
-button:hover {
-  background: var(--container-background-hover);
 }

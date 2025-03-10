@@ -1,9 +1,30 @@
-.button
-{
-    padding: 8px;
-    background-color: var(--container-background);
-    border: solid 1px var(--border-light);
-    border-radius: var(--container-l);
-    color: var(--primary);
-    font-family: 'Inter', sans-serif;
+.button {
+  padding: 16px;
+  background-color: var(--container-background);
+  background-size: 12px 12px, cover;
+  border: solid 1px var(--border-medium);
+  color: var(--primary);
+  font-family: "Saira", sans-serif;
+  position: relative;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  background: radial-gradient(circle, var(--accent-faded) 1px, transparent 1px),
+    var(--accent-extra-faded);
+  background-size: 12px 12px, cover;
+  border-color: var(--accent-slightly-faded);
+  box-shadow: 0px 24px 48px -12px #000000a0;
+}
+
+.button:active {
+  transition: background-color 0.05s;
+  background-color: var(--accent-faded);
+}
+
+.dot {
+  background-color: var(--accent);
+  width: 3px;
+  height: 3px;
+  position: absolute;
 }
