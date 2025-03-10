@@ -1,4 +1,5 @@
 import { useCrew } from "../contexts/CrewContext";
+import Button from "./Button/Button";
 import styles from "./CrewItem.module.css";
 
 const avatars = import.meta.glob("../assets/avatar*.png", { eager: true });
@@ -19,8 +20,9 @@ function CrewItem({ member }) {
     }
   }
 
-  return (
-    <button className={`container ${styles.crewItem}`}>
+  return ( // TODO separate base button JSX into its own Listitem component - which can be reused later by child variants
+    <Button >
+      <div className={styles.crewItem}>
       <img src={getAvatar(avatar)} />
       <div className={styles.info}>
         <h3>{name}</h3>
@@ -52,7 +54,8 @@ function CrewItem({ member }) {
           </p>
         </div>
       </div>
-    </button>
+      </div>
+    </Button>
   );
 }
 export default CrewItem;

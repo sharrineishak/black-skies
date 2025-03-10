@@ -5,6 +5,7 @@
   --success: #069e71;
   --danger: #ff3559;
   --warning: #ffa51f;
+  --accent: #ffb803;
   --cool-black-0: white;
   --cool-black-25: #d8d9dc;
   --cool-black-50: #b4b6ba;
@@ -17,8 +18,21 @@
   --cool-black-700: #1b1e25;
   --cool-black-800: #14161c;
   --cool-black-900: #0c0e13;
-  --accent: #ffb803;
-
+  --corner-xs: 4px;
+  --corner-s: 8x;
+  --corner-m: 12px;
+  --corner-l: 16px;
+  --corner-xl: 24px;
+  --corner-2xl: 32px;
+  --corner-3xl: 64px;
+  --spacing-xs: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 12px;
+  --spacing-l: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+  --spacing-3xl: 64px;
+  
   /* Aliases */
   --page-background: var(--cool-black-900);
   --foreground: var(--cool-black-0);
@@ -26,6 +40,8 @@
   --foreground-light: var(--cool-black-600);
   --container-background: var(--cool-black-800);
   --container-background-hover: var(--cool-black-700);
+  --container-corner-s: var(--corner-m);
+  --container-corner-l: var(--corner-xl);
   --border-light: var(--cool-black-700);
   --border-medium: var(--cool-black-600);
   --border-heavy: var(--cool-black-500);

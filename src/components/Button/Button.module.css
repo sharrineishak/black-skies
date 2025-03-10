@@ -1,0 +1,9 @@
+.button
+{
+    padding: 8px;
+    background-color: var(--container-background);
+    border: solid 1px var(--border-light);
+    border-radius: var(--container-l);
+    color: var(--primary);
+    font-family: 'Inter', sans-serif;
+}
