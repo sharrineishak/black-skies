@@ -1,0 +1,18 @@
+.actionBar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: var(--spacing-m);
+}
+
+.left {
+  justify-content: start;
+}
+
+.center {
+  justify-content: center;
+}
+
+.right {
+  justify-content: end;
+}

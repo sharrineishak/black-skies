@@ -2,6 +2,12 @@ h2 {
   text-transform: uppercase;
 }
 
+.crewList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
 .crewList li {
   display: flex;
   flex-direction: column;

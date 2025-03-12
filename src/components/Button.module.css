@@ -1,0 +1,128 @@
+.button {
+  color: var(--primary);
+  font-family: "Saira", sans-serif;
+  position: relative;
+  transition: box-shadow 0.3s ease, background-color 0.1s;
+}
+
+/* Used for transitioning gradients by animating opacity */
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: -1;
+}
+
+.primary {
+  max-height: 64px;
+  padding: var(--spacing-m) var(--spacing-xl);
+  border-radius: var(--corner-m);
+  background: linear-gradient(
+    170deg,
+    var(--accent-transparent),
+    var(--accent-extra-faded)
+  );
+  border: 1px solid var(--accent);
+  outline: 2px solid var(--page-background);
+  outline-offset: -4px;
+  font-size: 16pt;
+  letter-spacing: 3pt;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.primary::before {
+  border-radius: var(--corner-m);
+  background: linear-gradient(
+    177deg,
+    var(--accent-transparent),
+    var(--accent-faded)
+  );
+}
+
+.primary:hover::before {
+  opacity: 1;
+}
+
+.primary:active {
+  background-color: var(--accent-extra-faded);
+}
+
+.secondary {
+  max-height: 64px;
+  padding: var(--spacing-m) var(--spacing-xl);
+  border-radius: var(--corner-m);
+  background: linear-gradient(
+    170deg,
+    var(--white-transparent),
+    var(--white-2x-faded)
+  );
+  border: 1px solid var(--border-heavy);
+  outline: 2px solid var(--page-background);
+  outline-offset: -4px;
+  font-size: 16pt;
+  letter-spacing: 3pt;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.secondary::before {
+  border-radius: var(--corner-m);
+  background: linear-gradient(
+    177deg,
+    var(--white-transparent),
+    var(--white-2x-faded)
+  );
+}
+
+.secondary:hover::before {
+  opacity: 1;
+}
+
+.secondary:active {
+  background-color: var(--white-extra-faded);
+}
+
+.tile {
+  padding: 16px;
+  background: var(--container-background);
+  background-size: 12px 12px, cover;
+  border: solid 1px var(--border-medium);
+  border-radius: 0;
+}
+
+.tile::before {
+  background: radial-gradient(
+      circle,
+      var(--accent-2x-faded) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      177deg,
+      var(--accent-transparent),
+      var(--accent-extra-faded)
+    );
+  background-size: 12px 12px, cover;
+}
+
+.tile:hover {
+  border-color: var(--accent-slightly-faded);
+  box-shadow: 0px 24px 48px -12px #000000a0;
+}
+
+.tile:hover::before {
+  opacity: 1;
+}
+
+.tile:active {
+  background-color: var(--accent-extra-faded);
+}
+
+.dot {
+  background-color: var(--accent);
+  width: 4px;
+  height: 4px;
+  position: absolute;
+}

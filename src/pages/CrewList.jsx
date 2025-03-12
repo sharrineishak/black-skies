@@ -1,6 +1,8 @@
 import { useCrew } from "../contexts/CrewContext";
-import CrewItem from "./CrewItem";
+import Button from "../components/Button";
+import CrewItem from "../components/CrewItem";
 import styles from "./CrewList.module.css";
+import ActionBar from "../components/ActionBar";
 
 function CrewList() {
   const { members } = useCrew();
@@ -9,7 +11,11 @@ function CrewList() {
 
   return (
     <div className={styles.crewList}>
-      <h2>Crew</h2>
+      <h1>Crew List</h1>
+      <ActionBar align="right">
+        <Button>Manage</Button>
+      </ActionBar>
+
       <li>
         {members.map((member) => (
           <CrewItem key={member.id} member={member} />
